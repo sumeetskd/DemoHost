@@ -17,19 +17,28 @@ body{
 }
 
 .container{
-    display: grid;
+    /* display: grid;
     grid-template-areas: 
     "nav"
     "sec1"
     "sec2"
     "sec3"
-    ;
+    ; */
+    display: flex;
     border: 2px solid black;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-content: flex-start;
+    background-color:rgb(255, 196, 196)
 }
-
-.nav{
-    grid-area: nav;
+.container-item{
+    flex-grow: 1;
+    flex-basis: 100vw;
+    
 }
+/* .nav{ */
+    /* grid-area: nav; */
+/* } */
 .nav{
     font-family: 'IBM Plex Sans', sans-serif;
     background-color: rgb(255, 66, 66);
@@ -55,7 +64,13 @@ body{
 
 }
 .sec1{
-    grid-area: sec1;
+    /* grid-area: sec1; */
+    min-height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
 .sec1{
     background-color: #4b4b4b;
@@ -63,9 +78,12 @@ body{
 }
 .sec1 h2{
     color: white;
+    flex-basis: 100vw;
 }
 .sec1 p{
+    margin: 0px;
     color: #ffee00;
+    flex-basis: 100vw;
 }
 
 .sec2{
