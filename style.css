@@ -48,15 +48,13 @@ body{
     flex-wrap: wrap;
     position: fixed;
     z-index: 10;
-    width: 100%;
+    width: 100vw;
 }
 .item{
-    justify-self: center;
-    /* align-self: center; */
     flex-basis: 150px;
-    /* flex-grow: 1; */
-    /*flex-basis: 100px;
-    flex-shrink: 1; */
+    display: flex;
+    justify-content: center;
+    
 }
 .nav a{
     text-decoration: none;
