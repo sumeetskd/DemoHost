@@ -256,7 +256,7 @@ body{
     flex:1 1 100vw;
 }
 .s3-social{
-    height: 200px;
+    height: 130px;
     display: flex;
 }
 .s3-social ul{
@@ -301,11 +301,25 @@ body{
     width: 13px;
 }
 .s3-footer{
-    height: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.s3-footer footer{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media screen and (max-width: 1022px) {
     .s3-social ul {
       /* Apply some styles */
       flex-wrap: wrap;
+      
+    }
+    .s3-social{
+        height: 200px;
+        
     }
   }
