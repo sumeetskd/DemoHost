@@ -20,11 +20,11 @@ body{
     display: flex;
     border: 2px solid black;
     flex-wrap: wrap;
-    height: 200vh;
+    height: auto;
     align-content: flex-start;
     background-color:rgb(255, 196, 196);
     margin-top: 0px;
-}
+} 
 .container-item{
     flex-grow: 1;
     flex-basis: 100vw;
@@ -59,14 +59,14 @@ body{
 .nav a{
     text-decoration: none;
     color: white;
-    transition: 0.5s;
+    transition: 0.4s;
     /* transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: cubic-bezier(0.82, -0.01, 0.29, 0.96);
     transition-delay: 0s; */
 }
 .nav a:hover{
-    transform: scale(10%);
+    transform: scale(130%);
 }
 .sec1{
     /* grid-area: sec1; */
@@ -87,19 +87,49 @@ body{
 }
 .sec1 p{
     margin: 0px;
+    height: 35px;
     color: #ffee00;
     flex-basis: 100vw;
+}
+#resume{
+    flex-basis: 1px;
+    transition: 0.3s;
+}
+#resume:hover{
+    transform: scale(120%);
+    /* box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12); */
+}
+
+#resume a{
+    text-decoration:underline;
+    color: #ffee00;
+    transition: 0.3s;
+    font-weight: normal;
+    padding: 10px;
+    
+}
+#resume a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    /* transform: scale(120%); */
 }
 
 .sec2{
     /* grid-area: sec2; */
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
     align-items: center;
     background-color: white;
+    border: 2px solid yellow;
+    
 }
 .sec2-head{
     margin: 80px 0;
@@ -127,11 +157,12 @@ body{
     flex: 1 1 100vw;
     display: flex;
     border: 1px solid black;
-    height: 80vh;
+    height: auto;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .card-p{
-    flex:1 ;
+    /* flex:1 ; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -141,30 +172,140 @@ body{
     border: 2px solid red;
     height: 300px;
     width: 300px;
-    margin:0px 30px 30px 30px;
-}
-/* make another div to put the .sec2-cards */
-.card-p section img{
-    width: 100%;
-    height: 100%;
-    /* background-repeat: repeat; */
-}
-.card-p section{
-    flex: 1 1 100vw;
-    height: 80%;
+    padding: 50px;
+    
 }
 .card-p a{
     text-decoration: none;
     color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 1px solid black;
-    
+
+    /* box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12); */
+
 }
 .card-p a{
+    transition: 0.5s;
+}
+.card-p a:hover{
+    /* transform: scale(90%); */
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12);
+}
+/* make another div to put the .sec2-cards */
+.card-p a section img{
+    width: 100%;
+    height: 100%;
+    /* background-repeat: repeat; */
+}
+.card-p a section{
+    /* flex: 1 1 100vw; */
+    height: 80%;
+    flex:2;
+}
+.card-p a div{
+    border: 1px solid black;
+}
+.card-p h3{
     flex:1;
     text-align:center;
+    
 }
 .sec3{
+    background-color: rgb(75, 75, 75);
     display: flex;
+
     flex-wrap: wrap;
-    /* grid-area: sec3; */
+    height: auto;
+    color: white;
+    /* padding: 20px; */
 }
+.s3-items{
+    flex:1 1 100vw;
+}
+.s3-head{
+    height: 300px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: center;
+    text-align:center;
+
+}
+.s3-head h3{
+    font-size: 20px;
+    font-style: italic;
+}
+.s3-head h2{
+    font-size: 40px;
+    margin: 0;
+}
+.s3-head-item{
+    flex:1 1 100vw;
+}
+.s3-social{
+    height: 200px;
+    display: flex;
+}
+.s3-social ul{
+    flex:1;
+    display: flex;
+    list-style: none;
+    align-items: baseline;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+.s3-social ul li{
+    
+    flex-basis: 200px;
+    display: flex;
+    justify-content: center;
+    /* padding: 0 10px; */
+}
+.s3-social uL li a{
+    /* font-size: 100px; */
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.8s;
+}
+.s3-social img{
+    width: 20px;
+    padding-right: 15px;
+    
+}
+.s3-social a:hover{
+    transform: scale(120%);
+    transform: translateY(20px);
+}
+.s3-ruler{
+    
+}
+#fb-icon{
+    width: 10px;
+}
+#call-icon{
+    width: 13px;
+}
+.s3-footer{
+    height: 200px;
+}
+@media screen and (max-width: 1022px) {
+    .s3-social ul {
+      /* Apply some styles */
+      flex-wrap: wrap;
+    }
+  }
