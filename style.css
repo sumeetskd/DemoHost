@@ -125,6 +125,7 @@ body{
 .sec2{
     /* grid-area: sec2; */
     /* min-height: 100vh; */
+    padding:0 0 100px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
