@@ -22,7 +22,7 @@ body{
     flex-wrap: wrap;
     height: auto;
     align-content: flex-start;
-    background-color:rgb(255, 196, 196);
+    background-color:rgb(246,246, 246);
     margin-top: 0px;
 } 
 .container-item{
@@ -78,7 +78,9 @@ body{
     align-content: center;
 }
 .sec1{
-    background-color: #4b4b4b;
+    /* background-color: #4b4b4b; */
+    background: rgb(246, 246, 246);
+    background: linear-gradient(0deg, rgb(255, 247, 247) 0%, rgba(0,0,0,1) 45%, rgba(140,22,22,1) 100%);;
     text-align: center;
 }
 .sec1 h2{
@@ -128,19 +130,22 @@ body{
     justify-content: center;
     align-content: flex-start;
     align-items: center;
-    background-color: white;
+    /* background-color: rgb(246,246,246); */
     color: black;
     /* border: 2px solid yellow; */
-    
+    background: rgb(75, 75, 75);
+    background: linear-gradient( 
+        0deg
+         , rgb(234 234 234) 0%, rgba(250,244,244,1) 67%, rgb(255 247 247) 100%);    
 }
 .sec2-head{
-    margin: 80px 0;
+    padding: 80px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 60px;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(246, 2, 255); */
     flex: 1 1 100vw;
 }
 .sec2 h2{
@@ -154,6 +159,10 @@ body{
     justify-content: center;
     flex-basis: 100vw;
     margin: 0;
+}
+.sec2 p svg{
+    height: 10px;
+    width:400px;
 }
 .sec2-cards{
     flex: 1 1 100vw;
@@ -196,6 +205,7 @@ body{
 }
 .card-p a{
     transition: 0.5s;
+    border-radius: 0px 0px 10px 10px;
 }
 .card-p a:hover{
     /* transform: scale(90%); */
@@ -234,7 +244,11 @@ body{
     
 }
 .sec3{
-    background-color: rgb(75, 75, 75);
+    background: rgb(0,0,0);
+background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(75,75,75,1) 100%, rgba(255,255,255,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(75,75,75,1) 100%, rgba(255,255,255,1) 100%);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(75,75,75,1) 100%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
     display: flex;
 
     flex-wrap: wrap;
@@ -322,6 +336,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 @media screen and (max-width: 1022px) {
     .s3-social ul {
       /* Apply some styles */
@@ -333,3 +348,37 @@ body{
         
     }
   }
+  @media screen and (max-width: 490px) {
+    .nav{
+        justify-content: center;
+    }
+    .item{
+        flex-basis: 33.33%;
+    }
+    .item a{
+        font-size:90%;
+    }
+    .card-p{
+        /* padding:0; */
+        /* height:90%;
+        width:90%; */
+        height:100%;
+        width: 100%;
+        padding: 10%;
+    }
+    .sec2-head h2{
+        text-align: center;
+    }
+    
+    .s3-head h3{
+        font-size: initial;
+    }
+    .s3-head h2{
+        font-size:initial;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .sec2-head p svg{
+        width: 100%;
+    }
+}
